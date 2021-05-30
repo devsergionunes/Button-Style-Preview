@@ -1,0 +1,35 @@
+body.dark {
+    background-color: #222;
+  }
+  .button-creator.dark {
+    color: #ccc;
+  }
+  #controles.dark {
+    background-color: #555;
+  }
+  #controles.dark input {
+    color: #ccc;
+    background-color: #222;
+  }
+  #controles.dark select {
+    color: #ccc;
+    background-color: #222;
+  }
+  #controles.dark input[type='range']::-webkit-slider-runnable-track {
+    background: #222;
+  }
+  #controles.dark input[type='range']::-webkit-slider-thumb {
+    background: #ccc;
+  }
+  .button-creator.dark .btn-reset{
+    background-color: #555;
+    color: #ccc;
+    box-shadow: 0 0 3px 1px rgba(153, 146, 146, 0.1);
+  }
+  .button-dark.dark {
+    background-color:#555;
+  }
+  .button-dark.dark span{
+    margin-left: 50%;
+    background: #222;
+  }

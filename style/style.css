@@ -1,0 +1,143 @@
+@import './dark.css';
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  background-color: #ccc;
+  padding: 20px;
+}
+.button-creator {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-gap: 30px;
+  padding: 20px;
+  animation-name: animaControl;
+  animation-duration: 1s ;
+  animation-fill-mode: forwards;
+}
+@keyframes animaControl {
+  from {
+    opacity: 0;
+    transform: translate3d( -40px , 0px , 0px);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0px , 0px , 0px);
+  }
+}
+#controles {
+  padding: 20px;
+  background-color: #eee;
+  box-shadow: 0 0px 0px 0px rgba(0,0,0,0.5);
+  border-radius: 0.5rem;
+}
+#controles label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-family: monospace;
+  font-weight:bold;
+}
+#controles input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  font-family: monospace;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+#controles input[type='text'],
+#controles input[type='number']{
+  padding: 0.3rem 0.5rem;
+  padding-left: 0.8rem;
+}
+#controles input[type='range'] {
+  -webkit-appearance: none;
+}
+#controles input[type='range']::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  background: #ccc;
+  border: none;
+  border-radius: 3px;
+}
+#controles input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #222;
+  margin-top: -5px;
+}
+
+#controles select {
+  width:100%;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: monospace;
+  background-color: #ccc;
+  border: none;
+  font-weight:bold;
+  cursor: pointer;
+  outline: none;
+}
+.resultado{
+  position: relative;
+}
+.btn {
+  margin-bottom: 0.5rem;
+}
+.css {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+.css span {
+  margin: 0.5rem ;
+  font-size: 1rem;
+  font-family: monospace;
+  font-weight: bold;
+}
+.btn-reset{
+  padding: 8px 15px ;
+  background-color: #222;
+  color: #ccc;
+  font-size: 0.8rem;
+  font-family: monospace;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1);
+  position: absolute; 
+  bottom: 0px;
+  cursor: pointer;
+}
+.button-dark {
+  border-radius: 2rem;
+  width: 4.5rem;
+  height: 2.5rem;
+  padding: 0.2rem;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  background-color:#222;
+}
+.button-dark span{
+  position: relative;
+  display: block;
+  background: #555;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  transition: margin-left 0.5s;
+  cursor: pointer;
+}
+
